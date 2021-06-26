@@ -51,6 +51,9 @@
     <Compile Include="Abstract\IGameService.cs" />
     <Compile Include="Abstract\ISaleService.cs" />
     <Compile Include="Adapters\MernisServiceAdapters.cs" />
+    <Compile Include="Concrete\CampaignManager.cs" />
+    <Compile Include="Concrete\GameManager.cs" />
+    <Compile Include="Concrete\GamerManager.cs" />
     <Compile Include="Connected Services\MernisServiceReference\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

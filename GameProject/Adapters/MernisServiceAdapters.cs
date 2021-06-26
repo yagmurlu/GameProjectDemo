@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace GameProjectDemo.Adapters
 {
-    public class MernisServiceAdapters : ICheckService
+    public class MernisServiceAdapters
     {
         public bool CheckIfRealPerson(Gamer gamer)
         {
