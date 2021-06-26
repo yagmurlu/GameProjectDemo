@@ -1,4 +1,5 @@
-﻿using GameProjectDemo.Abstract;
+﻿using GameProject.MernisServiceReference;
+using GameProjectDemo.Abstract;
 using GameProjectDemo.Entities;
 using System;
 using System.Collections.Generic;
@@ -12,7 +13,9 @@ namespace GameProjectDemo.Adapters
     {
         public bool CheckIfRealPerson(Gamer gamer)
         {
-            throw new NotImplementedException();
+            KPSPublicSoapClient client = new KPSPublicSoapClient();
+            return client.TCKimlikNoDogrula(Convert.ToInt64(gamer.NationalityId),
+                gamer.FirstName.ToUpper(),gamer.LastName.ToUpper(),gamer.DateOfBirth.Year);
         }
     }
 }
