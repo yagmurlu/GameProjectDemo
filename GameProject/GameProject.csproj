@@ -46,7 +46,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\BaseGamerManager.cs" />
-    <Compile Include="Abstract\IBaseGamerService.cs" />
     <Compile Include="Abstract\ICampaignService.cs" />
     <Compile Include="Abstract\ICheckService.cs" />
     <Compile Include="Abstract\IGamerService.cs" />

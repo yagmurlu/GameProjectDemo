@@ -14,13 +14,14 @@ namespace GameProject.Concrete
      
         //private MernisServiceAdapters mernisServiceAdapters;
         private ICheckService _checkService;
-        public GamerManager(ICheckService checkService)
-        {
-            _checkService = checkService;
-        }
 
         public GamerManager()
         {
+        }
+
+        public GamerManager(ICheckService checkService)
+        {
+            _checkService = checkService;
         }
       
         public override void Add(Gamer gamer)
@@ -36,20 +37,20 @@ namespace GameProject.Concrete
         }
 
 
-        //public void Remove(Gamer gamer)
-        //{
-        //    if (_checkService.CheckIfRealPerson(gamer))
-        //    {
-        //        Console.WriteLine(gamer.FirstName + " " + gamer.LastName + " " + "adlı oyuncu silindi!");
-        //    }
-        //}
+        public override void Remove(Gamer gamer)
+        {
+            if (_checkService.CheckIfRealPerson(gamer))
+            {
+                Console.WriteLine(gamer.FirstName + " " + gamer.LastName + " " + "adlı oyuncu silindi!");
+            }
+        }
 
-        //public void Update(Gamer gamer)
-        //{
-        //    if (_checkService.CheckIfRealPerson(gamer))
-        //    {
-        //        Console.WriteLine(gamer.FirstName + " " + gamer.LastName + " " + "adlı oyuncu güncellendi!");
-        //    }
-        //}
+        public override void Update(Gamer gamer)
+        {
+            if (_checkService.CheckIfRealPerson(gamer))
+            {
+                Console.WriteLine(gamer.FirstName + " " + gamer.LastName + " " + "adlı oyuncu güncellendi!");
+            }
+        }
     }
 }

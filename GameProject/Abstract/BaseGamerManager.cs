@@ -12,7 +12,7 @@ namespace GameProject.Abstract
     {
         public virtual void Add(Gamer gamer)
         {
-            Console.WriteLine(gamer.FirstName + " " + gamer.LastName + " " + "adlı oyuncu eklendi!!!");
+            Console.WriteLine(gamer.FirstName + " " + gamer.LastName + " " + "adlı oyuncu eklendi!");
         }
         public virtual void Remove(Gamer gamer)
         {
