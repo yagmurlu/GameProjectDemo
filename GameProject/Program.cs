@@ -72,9 +72,32 @@ namespace GameProject
             gameManager.Add(game1);
             gameManager.Update(game1);
             gameManager.Remove(game1);
-            
-            
-            
+
+            //KAMPANYA (CAMPAIGN) İŞLEMLERİ
+            Console.WriteLine("*******  KAMPANYA İŞLEMLERİ *******");
+            Console.WriteLine("");
+            Campaign bahar = new Campaign()
+            {
+                CampaingName="BAHAR İNDİRİMİ",
+                CampaingDiscount=15
+            };
+
+            Campaign yeniYıl = new Campaign()
+            {
+                CampaingName="YENİ YIL İNDİRMİ",
+                CampaingDiscount=10
+            };
+            CampaignManager campaignManager = new CampaignManager();
+            // BAHAR KAMPANYASI İŞLEMLERİ
+            campaignManager.Add(bahar);
+            campaignManager.Remove(bahar);
+            campaignManager.Update(bahar);
+            // YENİ YIL KAMPANYASI İŞLEMLERİ
+            Console.WriteLine("");
+            campaignManager.Add(yeniYıl);
+            campaignManager.Remove(yeniYıl);
+            campaignManager.Update(yeniYıl);
+
             Console.ReadLine();
         }
 
