@@ -24,7 +24,7 @@ namespace GameProject
                 FirstName = "Aleyna Yağmur",
                 LastName = "TÜMTÜRK",
                 DateOfBirth = new DateTime(1999, 05, 14),
-                NationalityId = "10510238336"
+                NationalityId = "98765432101"
 
             };
             Gamer gamer2 = new Gamer()
@@ -32,7 +32,7 @@ namespace GameProject
                 GamerId = 2,
                 FirstName = "Kağan",
                 LastName = "ÖZTÜRK",
-                DateOfBirth = new DateTime(1999, 06, 26),
+                DateOfBirth = new DateTime(1998, 06, 26),
                 NationalityId = "12345678910"
 
             };
@@ -105,7 +105,7 @@ namespace GameProject
            
             GameSaleManager gameSaleManager = new GameSaleManager();
             gameSaleManager.Sale(gamer2,game1,bahar);
-
+            gameSaleManager.Sale(gamer, game1, yeniYıl);
             Console.ReadLine();
         }
 
