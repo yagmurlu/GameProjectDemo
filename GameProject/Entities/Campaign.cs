@@ -9,6 +9,6 @@ namespace GameProjectDemo.Entities
     public class Campaign
     {
         public string  CampaingName { get; set; }
-        public int CampaingDiscount { get; set; }
+        public double CampaingDiscount { get; set; }
     }
 }

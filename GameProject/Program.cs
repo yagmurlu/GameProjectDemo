@@ -102,8 +102,9 @@ namespace GameProject
             Console.WriteLine("*******  SATIŞ İŞLEMLERİ *******");
             Console.WriteLine("");
 
+           
             GameSaleManager gameSaleManager = new GameSaleManager();
-            gameSaleManager.Sale(gamer,game1,bahar);
+            gameSaleManager.Sale(gamer2,game1,bahar);
 
             Console.ReadLine();
         }

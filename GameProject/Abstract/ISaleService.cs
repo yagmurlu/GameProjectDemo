@@ -9,6 +9,6 @@ namespace GameProjectDemo.Abstract
 {
     public interface ISaleService
     {
-        void Sale(Gamer gamer,Game game,Campaign campaign);
+         void Sale(Gamer gamer,Game game,Campaign campaign);
     }
 }
