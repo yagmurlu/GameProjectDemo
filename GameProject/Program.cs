@@ -66,7 +66,7 @@ namespace GameProject
                 GameId=1,
                 GameName="Süper Mario",
                 GameDescription="Macera",
-                GamePrice=10
+                GamePrice=50
             };
             GameManager gameManager = new GameManager();
             gameManager.Add(game1);
@@ -97,6 +97,13 @@ namespace GameProject
             campaignManager.Add(yeniYıl);
             campaignManager.Remove(yeniYıl);
             campaignManager.Update(yeniYıl);
+
+            //SATIŞ İŞLEMLERİ
+            Console.WriteLine("*******  SATIŞ İŞLEMLERİ *******");
+            Console.WriteLine("");
+
+            GameSaleManager gameSaleManager = new GameSaleManager();
+            gameSaleManager.Sale(gamer,game1,bahar);
 
             Console.ReadLine();
         }

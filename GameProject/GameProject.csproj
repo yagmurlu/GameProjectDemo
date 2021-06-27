@@ -55,6 +55,7 @@
     <Compile Include="Concrete\CampaignManager.cs" />
     <Compile Include="Concrete\GameManager.cs" />
     <Compile Include="Concrete\GamerManager.cs" />
+    <Compile Include="Concrete\GameSaleManager.cs" />
     <Compile Include="Concrete\MernisCheckManager.cs" />
     <Compile Include="Connected Services\MernisServiceReference\Reference.cs">
       <AutoGen>True</AutoGen>
