@@ -11,6 +11,7 @@ namespace GameProjectDemo.Abstract
     {
         void Add(Gamer gamer);
         void Update(Gamer gamer);
-        void Remove(Gamer gamer); 
+        void Remove(Gamer gamer);
+        
     }
 }

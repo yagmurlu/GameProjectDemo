@@ -45,6 +45,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\BaseGamerManager.cs" />
+    <Compile Include="Abstract\IBaseGamerService.cs" />
     <Compile Include="Abstract\ICampaignService.cs" />
     <Compile Include="Abstract\ICheckService.cs" />
     <Compile Include="Abstract\IGamerService.cs" />
@@ -54,6 +56,7 @@
     <Compile Include="Concrete\CampaignManager.cs" />
     <Compile Include="Concrete\GameManager.cs" />
     <Compile Include="Concrete\GamerManager.cs" />
+    <Compile Include="Concrete\MernisCheckManager.cs" />
     <Compile Include="Connected Services\MernisServiceReference\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
