@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using GameProjectDemo.Abstract;
 
 namespace GameProject
 {
@@ -24,7 +25,7 @@ namespace GameProject
                 FirstName = "Aleyna Yağmur",
                 LastName = "TÜMTÜRK",
                 DateOfBirth = new DateTime(1999, 05, 14),
-                NationalityId = "98765432101"
+                NationalityId = "12345678912"
 
             };
             Gamer gamer2 = new Gamer()
@@ -103,7 +104,7 @@ namespace GameProject
             Console.WriteLine("");
 
            
-            GameSaleManager gameSaleManager = new GameSaleManager();
+            GameSaleManager gameSaleManager = new GameSaleManager(new MernisServiceAdapters());
             gameSaleManager.Sale(gamer2,game1,bahar);
             gameSaleManager.Sale(gamer, game1, yeniYıl);
             Console.ReadLine();
